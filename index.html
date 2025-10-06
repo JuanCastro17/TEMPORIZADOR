@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Temporizador con alarma — Contador</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1 id="titulo">Temporizador</h1>
+
+    <label>Hora inicial</label>
+    <div class="row">
+      <input id="h" type="number" min="0" max="23" value="0"> 
+      <input id="m" type="number" min="0" max="59" value="0"> 
+      <input id="s" type="number" min="0" max="59" value="0">
+    </div>
+
+    <label>Hora final (cuando llegue se detiene)</label>
+    <div class="row">
+      <input id="hf" type="number" min="0" max="23" value="0"> 
+      <input id="mf" type="number" min="0" max="59" value="0"> 
+      <input id="sf" type="number" min="0" max="59" value="5">
+    </div>
+
+    <div class="controls">
+      <button id="start">Iniciar</button>
+      <button id="pause" class="secondary">Pausa</button>
+      <button id="reset" class="secondary">Reset</button>
+    </div>
+
+    <div id="mensaje" class="mensaje"></div>
+    <div class="timeDisplay" id="display">00:00:00</div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
