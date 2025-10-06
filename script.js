@@ -70,7 +70,7 @@ function onTargetReached() {
 
   // 🌟 Easter Egg #1 — Hora mágica
   if (horaFin === 11 && minutoFin === 11 && segundoFin === 11) {
-    mensaje.innerHTML = "🌟 ¡Hora mágica 11:11:11! Pide un deseo.";
+    mensaje.innerHTML = "🌟 ¡Hora mágica 11:11:11! Pide un deseo (clikea el titulo 5 veces).";
     mensaje.style.color = "gold";
   } else {
     mensaje.innerHTML = `⏰ Se alcanzó la hora indicada: ${pad(horaFin)}:${pad(minutoFin)}:${pad(segundoFin)}`;
@@ -139,4 +139,5 @@ window.addEventListener('keydown', (e) => {
     activarGatito();
   }
 });
+
 
