@@ -140,5 +140,23 @@ window.addEventListener('keydown', (e) => {
   }
 });
 
+function activarGatito() {
+  // Sin alert para no frenar el reloj
+  mensaje.innerHTML = "🎉 ¡Felicidades! Encontraste el easter egg 😺";
+  mensaje.style.color = "pink";
+  document.body.style.animation = 'rgbFondo 4s infinite linear';
+  const gato = document.createElement('div');
+  gato.textContent = '🐱';
+  gato.style.fontSize = '100px';
+  gato.style.textAlign = 'center';
+  gato.style.marginTop = '20px';
+  gato.style.animation = 'salto 1s infinite alternate';
+  document.body.appendChild(gato);
+}
+
+
+
+
+
 
 
